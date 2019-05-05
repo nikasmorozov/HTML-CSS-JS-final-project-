@@ -1,3 +1,43 @@
-p {
-  font-size: 2em;
-  color: fuchsia; }
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+p, span {
+  font-weight: 400;
+  color: white;
+  font-size: 14px; }
+
+body {
+  margin: 0; }
+  body header {
+    width: 100vw;
+    background: #1C1C1C;
+    display: fixed; }
+    body header .container {
+      height: 72px;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body header .container .headerLogo {
+        width: 120px;
+        height: 50px;
+        background-image: url(media/cheshire-county-hygiene-services@2x.png);
+        background-position: center;
+        background-size: cover; }
+      body header .container .menu .menuitem {
+        margin-right: 45px; }
+  body section {
+    height: 640px;
+    background-image: url(media/photo-1480714378408-67cf0d13bc1b-image.jpg);
+    background-position: center;
+    background-size: cover; }
