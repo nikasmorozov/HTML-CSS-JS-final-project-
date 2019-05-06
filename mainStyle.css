@@ -27,7 +27,8 @@ h4 {
 
 h5 {
   color: black;
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: 400; }
 
 h6 {
   font-weight: 600; }
@@ -234,3 +235,157 @@ body {
             max-width: 380px; }
             body section:nth-of-type(4) .container .aboutContent .about .aboutText .semiBold {
               font-weight: 600; }
+  body section:nth-of-type(5) .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 600px; }
+    body section:nth-of-type(5) .container h3 {
+      color: #1C1C1C;
+      position: relative;
+      margin-bottom: 50px; }
+    body section:nth-of-type(5) .container h3:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -30px;
+      height: 100%;
+      width: 60px;
+      border-bottom: 2px solid #E27866;
+      -webkit-transform: translateY(20px);
+      transform: translateY(20px); }
+    body section:nth-of-type(5) .container p {
+      margin-bottom: 65px; }
+    body section:nth-of-type(5) .container .awesomeThings {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body section:nth-of-type(5) .container .awesomeThings .awesomeThing {
+        margin-left: 50px;
+        margin-right: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        max-width: 300px; }
+        body section:nth-of-type(5) .container .awesomeThings .awesomeThing .awesomeSign {
+          width: 50px;
+          height: 50px;
+          background-position: center;
+          background-repeat: no-repeat; }
+        body section:nth-of-type(5) .container .awesomeThings .awesomeThing #prize {
+          background-image: url(media/Group_74.svg); }
+        body section:nth-of-type(5) .container .awesomeThings .awesomeThing #flower {
+          background-image: url(media/Group_73.svg); }
+        body section:nth-of-type(5) .container .awesomeThings .awesomeThing #visaCard {
+          background-image: url(media/Group_72.svg); }
+        body section:nth-of-type(5) .container .awesomeThings .awesomeThing h5 {
+          margin-top: 36px;
+          margin-bottom: 27px; }
+  body section:nth-of-type(6) {
+    background: #6696E2; }
+    body section:nth-of-type(6) .container {
+      height: 880px;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body section:nth-of-type(6) .container h3 {
+        position: relative;
+        margin-bottom: 50px; }
+      body section:nth-of-type(6) .container h3:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -30px;
+        height: 100%;
+        width: 60px;
+        border-bottom: 2px solid #41D395;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px); }
+      body section:nth-of-type(6) .container .cards {
+        margin-top: 80px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        body section:nth-of-type(6) .container .cards .card {
+          width: 343px;
+          margin-left: 20px;
+          margin-right: 20px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          text-align: center;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end; }
+          body section:nth-of-type(6) .container .cards .card .darkGreyBackground {
+            background: #333333;
+            border-radius: 7px 7px 0 0; }
+            body section:nth-of-type(6) .container .cards .card .darkGreyBackground h5 {
+              color: white;
+              margin-top: 14px;
+              margin-bottom: 21px; }
+            body section:nth-of-type(6) .container .cards .card .darkGreyBackground p {
+              margin-top: 14px;
+              margin-bottom: 19px; }
+            body section:nth-of-type(6) .container .cards .card .darkGreyBackground .dollarSign {
+              font-size: 36px; }
+              body section:nth-of-type(6) .container .cards .card .darkGreyBackground .dollarSign .price {
+                font-size: 94px; }
+          body section:nth-of-type(6) .container .cards .card .greenBlock {
+            border: 3px solid #41D395;
+            background: #41D395; }
+            body section:nth-of-type(6) .container .cards .card .greenBlock p {
+              margin-top: 11px;
+              margin-bottom: 11px;
+              text-transform: uppercase; }
+          body section:nth-of-type(6) .container .cards .card .whiteBackground {
+            background: white;
+            border-radius: 0 0 7px 7px; }
+            body section:nth-of-type(6) .container .cards .card .whiteBackground p {
+              color: #86878B;
+              margin-top: 11px;
+              margin-bottom: 11px; }
