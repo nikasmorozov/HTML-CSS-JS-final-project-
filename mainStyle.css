@@ -173,10 +173,12 @@ body {
             color: #1C1C1C;
             font-size: 16px;
             font-weight: 600;
-            margin-bottom: 20px; }
+            margin-bottom: 15px; }
           body section:nth-of-type(1) .container .signUpForm .forms input {
             border: none;
-            border-bottom: 1px solid #D8D8D8; }
+            border-bottom: 1px solid #D8D8D8;
+            margin-bottom: 20px;
+            font-size: 12px; }
           body section:nth-of-type(1) .container .signUpForm .forms .radioButtons {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -203,7 +205,8 @@ body {
               background: none;
               border: none;
               font-size: 18px;
-              font-weight: 600; }
+              font-weight: 600;
+              margin: 0; }
   body section:nth-of-type(1):before {
     content: "";
     position: absolute;

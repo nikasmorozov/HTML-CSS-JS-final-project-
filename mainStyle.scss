@@ -187,12 +187,14 @@ body {
                         color: #1C1C1C;
                         font-size: 16px;
                         font-weight: 600;
-                        margin-bottom: 20px;
+                        margin-bottom: 15px;
                     }
 
                     input {
                         border: none;
                         border-bottom: 1px solid #D8D8D8;
+                        margin-bottom: 20px;
+                        font-size: 12px;
                     }
 
                     .radioButtons {
@@ -215,6 +217,7 @@ body {
                             border: none;
                             font-size: 18px;
                             font-weight: 600;
+                            margin: 0;
                         }
                     }
                 }
