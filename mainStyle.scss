@@ -265,7 +265,7 @@ body {
             }
 
             .aboutContent {
-                max-width: 450px;
+                max-width: 460px;
                 
                 
                 h4 {
@@ -298,6 +298,8 @@ body {
                         background-size: 50%;
                         background-position: center;
                         background-repeat: no-repeat;
+                        margin-right: 20px;
+                        flex-shrink: 0;
                     }
 
                     #aboutEye {
@@ -309,10 +311,11 @@ body {
                     }
 
                     .aboutText {
-                        max-width: 380px;
+                        max-width: 400px;
 
-                        .semiBold {
+                        .whiteSemiBold {
                             font-weight: 600;
+                            margin-bottom: 6px;
                         }
                     }
                 }

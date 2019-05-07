@@ -228,7 +228,7 @@ body {
         background-position: center;
         background-size: cover; }
       body section:nth-of-type(4) .container .aboutContent {
-        max-width: 450px; }
+        max-width: 460px; }
         body section:nth-of-type(4) .container .aboutContent h4 {
           max-width: 315px;
           position: relative;
@@ -258,15 +258,19 @@ body {
             border-radius: 50%;
             background-size: 50%;
             background-position: center;
-            background-repeat: no-repeat; }
+            background-repeat: no-repeat;
+            margin-right: 20px;
+            -ms-flex-negative: 0;
+            flex-shrink: 0; }
           body section:nth-of-type(4) .container .aboutContent .about #aboutEye {
             background-image: url(media/Path_81.svg); }
           body section:nth-of-type(4) .container .aboutContent .about #aboutTextBubble {
             background-image: url(media/Path_82.svg); }
           body section:nth-of-type(4) .container .aboutContent .about .aboutText {
-            max-width: 380px; }
-            body section:nth-of-type(4) .container .aboutContent .about .aboutText .semiBold {
-              font-weight: 600; }
+            max-width: 400px; }
+            body section:nth-of-type(4) .container .aboutContent .about .aboutText .whiteSemiBold {
+              font-weight: 600;
+              margin-bottom: 6px; }
   body section:nth-of-type(5) .container {
     max-width: 1100px;
     margin: 0 auto;
