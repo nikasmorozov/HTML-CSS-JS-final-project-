@@ -39,7 +39,7 @@ body {
     width: 100vw;
     background: #1C1C1C;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 0; }
     body header .container {
       max-width: 1100px;
@@ -69,8 +69,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    z-index: -2; }
+    position: relative; }
     body section:nth-of-type(1) .container {
       max-width: 1100px;
       margin: 0 auto;
@@ -82,7 +81,8 @@ body {
       justify-content: space-between;
       -webkit-box-align: center;
       -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      z-index: 1; }
       body section:nth-of-type(1) .container .introduction {
         height: 640px;
         max-width: 650px;
@@ -138,18 +138,72 @@ body {
       body section:nth-of-type(1) .container .signUpForm {
         width: 360px;
         background: white;
-        height: 425px;
-        border-radius: 7px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
+        border-radius: 7px; }
+        body section:nth-of-type(1) .container .signUpForm .try {
+          background: #F5F5F5;
+          height: 60px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          width: 100%;
+          border-radius: 7px 7px 0 0; }
+          body section:nth-of-type(1) .container .signUpForm .try h5 {
+            font-weight: 600; }
+            body section:nth-of-type(1) .container .signUpForm .try h5 span {
+              color: #E27866;
+              font-size: 20px;
+              font-weight: 600; }
+        body section:nth-of-type(1) .container .signUpForm .forms {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          width: 100%;
+          margin-top: 30px; }
+          body section:nth-of-type(1) .container .signUpForm .forms p {
+            color: #1C1C1C;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px; }
+          body section:nth-of-type(1) .container .signUpForm .forms input {
+            border: none;
+            border-bottom: 1px solid #D8D8D8; }
+          body section:nth-of-type(1) .container .signUpForm .forms .radioButtons {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center; }
+          body section:nth-of-type(1) .container .signUpForm .forms .getStarted {
+            background: #41D395;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 60px;
+            border-radius: 0 0 7px 7px;
+            margin-top: 30px; }
+            body section:nth-of-type(1) .container .signUpForm .forms .getStarted input {
+              color: white;
+              background: none;
+              border: none;
+              font-size: 18px;
+              font-weight: 600; }
   body section:nth-of-type(1):after {
     content: "";
     position: absolute;
@@ -199,8 +253,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
-    z-index: -2; }
+    position: relative; }
     body section:nth-of-type(3) .container {
       max-width: 1100px;
       margin: 0 auto;
@@ -223,8 +276,7 @@ body {
     height: 100%;
     background: -webkit-gradient(linear, right top, left top, from(#6696E2), to(#E27866));
     background: linear-gradient(to left, #6696E2, #E27866);
-    opacity: 0.42;
-    z-index: -1; }
+    opacity: 0.42; }
   body section:nth-of-type(4) {
     background: #1C1C1C;
     width: 100vw; }
