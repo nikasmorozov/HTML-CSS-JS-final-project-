@@ -135,6 +135,21 @@ body {
           align-items: center; }
           body section:nth-of-type(1) .container .introduction .downloadButton a {
             font-weight: 600; }
+      body section:nth-of-type(1) .container .signUpForm {
+        width: 360px;
+        background: white;
+        height: 425px;
+        border-radius: 7px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
   body section:nth-of-type(1):after {
     content: "";
     position: absolute;

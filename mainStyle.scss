@@ -152,6 +152,16 @@ body {
                     }
                 }
             }
+
+            .signUpForm {
+                width: 360px;
+                background: white;
+                height: 425px;
+                border-radius: 7px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 
