@@ -52,10 +52,10 @@ body {
     header {
         width: 100vw;
         background: $black;
-        // position: fixed;
+        position: fixed;
+        z-index: 2;
+        top: 0;
         
-
-
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -80,6 +80,10 @@ body {
             }
         }
         
+    }
+
+    .mainContent {
+        margin-top: 72px;
     }
 
     section:nth-of-type(1) {
