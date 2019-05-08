@@ -185,42 +185,53 @@ body {
             font-size: 12px;
             width: 260px; }
           body section:nth-of-type(1) .container .signUpForm .forms .radioButtons {
-            width: 260px; }
+            width: 260px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .radioBtn {
+              height: 20px;
+              margin-right: 20px; }
             body section:nth-of-type(1) .container .signUpForm .forms .radioButtons label.radioBtn {
-              position: relative; }
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center; }
               body section:nth-of-type(1) .container .signUpForm .forms .radioButtons label.radioBtn span {
                 color: black;
                 font-size: 9px;
-                margin-left: 20px; }
+                margin-left: 5px; }
             body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .radioBtn input {
               display: none;
               opacity: 0;
               cursor: pointer; }
             body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .checkmark {
-              position: absolute;
-              top: 0;
-              left: 0;
               height: 13px;
               width: 13px;
               border: 1px solid #41D395;
               border-radius: 50%;
-              -webkit-transform: translateY(-1px);
-              transform: translateY(-1px); }
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
+              align-items: center; }
             body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .radioBtn:hover input ~ .checkmark {
               border: 2px solid #41D395; }
-            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .checkmark:after {
+            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons input:checked ~ .checkmark:after {
               content: "";
-              position: absolute;
-              display: none; }
-            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .radioBtn input:checked ~ .checkmark:after {
-              display: block; }
-            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .radioBtn .checkmark:after {
-              top: 1px;
-              left: 1px;
-              width: 10px;
-              height: 10px;
+              display: block;
+              width: 11px;
+              height: 11px;
               border-radius: 50%;
               background: #41D395; }
+            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons input:checked ~ span {
+              font-weight: 600; }
           body section:nth-of-type(1) .container .signUpForm .forms .getStarted {
             background: #41D395;
             display: -webkit-box;
