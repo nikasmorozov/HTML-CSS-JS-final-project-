@@ -51,14 +51,16 @@
                     <input type="tel" class="textInput" placeholder="Phone number">
                     <p>Type of subscription</p>
                     <div class="radioButtons">
-                        <div>
-                            <input class="radioBtn" id="radioBtn1" type="radio" name="field">
-                            <label for="radioBtn1">MONTHLY</label>
-                        </div>
-                        <div>
-                            <input class="radioBtn" id="radioBtn2" type="radio" name="field">
-                            <label for="radioBtn2">YEARLY</label>
-                        </div>
+                        <label class="radioBtn">
+                            <span>MONTHLY</span>
+                            <input type="radio" checked="checked" name="radio">
+                            <div class="checkmark"></div>
+                        </label>
+                        <label class="radioBtn">
+                            <span>YEARLY</span>
+                            <input type="radio" name="radio">
+                            <div class="checkmark"></div>
+                        </label>
                     </div>
                     <div class="getStarted">
                         <input type="submit" value="GET STARTED">
