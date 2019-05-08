@@ -183,7 +183,8 @@ body {
             border-bottom: 1px solid #D8D8D8;
             margin-bottom: 20px;
             font-size: 12px;
-            width: 260px; }
+            width: 260px;
+            outline: none; }
           body section:nth-of-type(1) .container .signUpForm .forms .radioButtons {
             width: 260px;
             display: -webkit-box;
@@ -254,8 +255,7 @@ body {
               font-size: 18px;
               font-weight: 600;
               margin: 0;
-              cursor: pointer;
-              outline: none; }
+              cursor: pointer; }
   body section:nth-of-type(1):before {
     content: "";
     position: absolute;
