@@ -46,6 +46,70 @@ h6 {
     font-weight: 600;
 }
 
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+.review {
+
+    width: 275px;
+
+    .reviewText {
+        background: $blue;
+        border-radius: 7px;
+        color: white;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .reviewText:after {
+        content: "";
+        top: 0;
+        bottom: 0;
+        width: 0; 
+        height: 0;
+        position: absolute;
+        margin-top: 174px;
+        margin-left: -102px;
+        border-top: 10px solid $blue;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+    }
+
+    p {
+        color: $mediumGrey;
+        line-height: 1.3;
+    }
+
+    p.personName {
+        font-size: 20px;
+        color: #333333;
+    }
+    
+    .reviewPerson {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .personPicture {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: grey;
+        background-position: center;
+        background-size: contain;
+        margin-right: 15px;
+    }
+
+    #jeremy {
+        background-image: url(media/jeremy.png);
+    }
+}
+
 body {
     margin: 0;
 
@@ -83,13 +147,31 @@ body {
                 &:nth-of-type(1):hover ~ .underbar{
                     left: 744px;
                     width: 65px;
-                    background:$coral ;
+                    background:$coral;
                 }
 
                 &:nth-of-type(2):hover ~ .underbar{
                     left: 844px;
                     width: 65px;
-                    background:$coral ;
+                    background:$coral;
+                }
+
+                &:nth-of-type(3):hover ~ .underbar{
+                    left: 944px;
+                    width: 65px;
+                    background:$coral;
+                }
+
+                &:nth-of-type(4):hover ~ .underbar{
+                    left: 1044px;
+                    width: 65px;
+                    background:$coral;
+                }
+
+                &:nth-of-type(5):hover ~ .underbar{
+                    left: 1150px;
+                    width: 65px;
+                    background:$coral;
                 }
             }
 
@@ -175,131 +257,131 @@ body {
                     }
                 }
             }
+        }
+    }
 
-            .signUpForm {
-                width: 360px;
-                background: white;
-                border-radius: 7px;
+    .signUpForm {
+        width: 360px;
+        background: white;
+        border-radius: 7px;
 
-                .try {
-                    background: #F5F5F5;
-                    height: 60px;
+        .try {
+            background: #F5F5F5;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            border-radius: 7px 7px 0 0;
+
+            h5 {
+                font-weight: 600;
+
+                span {
+                    color: $coral;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .forms {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 30px;
+            align-items: center;
+
+
+            p {
+                color: #1C1C1C;
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                width: 260px;
+            }
+
+            input {
+                border: none;
+                border-bottom: 1px solid #D8D8D8;
+                margin-bottom: 20px;
+                font-size: 12px;
+                width: 260px;
+                outline: none;
+            }
+
+            .radioButtons {
+                width: 260px;
+                display: flex;
+
+                .radioBtn {
+                    height: 20px;
+                    margin-right: 20px;
+                }
+
+                label.radioBtn {
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    border-radius: 7px 7px 0 0;
 
-                    h5 {
-                        font-weight: 600;
-
-                        span {
-                            color: $coral;
-                            font-size: 20px;
-                            font-weight: 600;
-                        }
+                    span {
+                        color: black;
+                        font-size: 9px;
+                        margin-left: 5px;
                     }
                 }
 
-                .forms {
+                .radioBtn input {
+                    display: none;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+
+                .checkmark {
+                    height: 13px;
+                    width: 13px;
+                    border: 1px solid $green;
+                    border-radius: 50%;
                     display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    margin-top: 30px;
+                    justify-content: center;
                     align-items: center;
+                }
 
+                .radioBtn:hover input ~ .checkmark {
+                    border: 2px solid $green;
+                }
 
-                    p {
-                        color: #1C1C1C;
-                        font-size: 16px;
-                        font-weight: 600;
-                        margin-bottom: 15px;
-                        width: 260px;
-                    }
+                input:checked ~ .checkmark:after {
+                    content: "";
+                    display: block;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 50%;
+                    background: $green;
+                }
 
-                    input {
-                        border: none;
-                        border-bottom: 1px solid #D8D8D8;
-                        margin-bottom: 20px;
-                        font-size: 12px;
-                        width: 260px;
-                        outline: none;
-                    }
+                input:checked ~ span {
+                    font-weight: 600;
+                }
+            }
 
-                    .radioButtons {
-                        width: 260px;
-                        display: flex;
+            .getStarted {
+                background: $green;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 60px;
+                border-radius: 0 0 7px 7px;
+                margin-top: 30px;
+                width: 100%;
 
-                        .radioBtn {
-                            height: 20px;
-                            margin-right: 20px;
-                        }
-
-                        label.radioBtn {
-                            display: flex;
-                            align-items: center;
-
-                            span {
-                                color: black;
-                                font-size: 9px;
-                                margin-left: 5px;
-                            }
-                        }
-
-                        .radioBtn input {
-                            display: none;
-                            opacity: 0;
-                            cursor: pointer;
-                        }
-
-                        .checkmark {
-                            height: 13px;
-                            width: 13px;
-                            border: 1px solid $green;
-                            border-radius: 50%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-
-                        .radioBtn:hover input ~ .checkmark {
-                            border: 2px solid $green;
-                        }
-
-                        input:checked ~ .checkmark:after {
-                            content: "";
-                            display: block;
-                            width: 11px;
-                            height: 11px;
-                            border-radius: 50%;
-                            background: $green;
-                        }
-
-                        input:checked ~ span {
-                            font-weight: 600;
-                        }
-                    }
-
-                    .getStarted {
-                        background: $green;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 60px;
-                        border-radius: 0 0 7px 7px;
-                        margin-top: 30px;
-                        width: 100%;
-
-                        input {
-                            color: white;
-                            background: none;
-                            border: none;
-                            font-size: 18px;
-                            font-weight: 600;
-                            margin: 0;
-                            cursor: pointer;
-                        }
-                    }
+                input {
+                    color: white;
+                    background: none;
+                    border: none;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin: 0;
+                    cursor: pointer;
                 }
             }
         }
@@ -683,7 +765,10 @@ body {
             justify-content: center;
             align-items: center;
 
-
+            p.contact {
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
         }
     }
 

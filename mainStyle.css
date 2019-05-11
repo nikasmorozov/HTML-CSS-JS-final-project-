@@ -33,6 +33,59 @@ h5 {
 h6 {
   font-weight: 600; }
 
+.swiper-container {
+  width: 600px;
+  height: 300px; }
+
+.review {
+  width: 275px; }
+  .review .reviewText {
+    background: #6696E2;
+    border-radius: 7px;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px; }
+  .review .reviewText:after {
+    content: "";
+    top: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-top: 174px;
+    margin-left: -102px;
+    border-top: 10px solid #6696E2;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent; }
+  .review p {
+    color: #86878B;
+    line-height: 1.3; }
+  .review p.personName {
+    font-size: 20px;
+    color: #333333; }
+  .review .reviewPerson {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .review .personPicture {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: grey;
+    background-position: center;
+    background-size: contain;
+    margin-right: 15px; }
+  .review #jeremy {
+    background-image: url(media/jeremy.png); }
+
 body {
   margin: 0; }
   body header {
@@ -70,6 +123,18 @@ body {
           background: #E27866; }
         body header .container .menuitem:nth-of-type(2):hover ~ .underbar {
           left: 844px;
+          width: 65px;
+          background: #E27866; }
+        body header .container .menuitem:nth-of-type(3):hover ~ .underbar {
+          left: 944px;
+          width: 65px;
+          background: #E27866; }
+        body header .container .menuitem:nth-of-type(4):hover ~ .underbar {
+          left: 1044px;
+          width: 65px;
+          background: #E27866; }
+        body header .container .menuitem:nth-of-type(5):hover ~ .underbar {
+          left: 1150px;
           width: 65px;
           background: #E27866; }
       body header .container .underbar {
@@ -153,127 +218,127 @@ body {
           align-items: center; }
           body section:nth-of-type(1) .container .introduction .downloadButton a {
             font-weight: 600; }
-      body section:nth-of-type(1) .container .signUpForm {
-        width: 360px;
-        background: white;
-        border-radius: 7px; }
-        body section:nth-of-type(1) .container .signUpForm .try {
-          background: #F5F5F5;
-          height: 60px;
+  body .signUpForm {
+    width: 360px;
+    background: white;
+    border-radius: 7px; }
+    body .signUpForm .try {
+      background: #F5F5F5;
+      height: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100%;
+      border-radius: 7px 7px 0 0; }
+      body .signUpForm .try h5 {
+        font-weight: 600; }
+        body .signUpForm .try h5 span {
+          color: #E27866;
+          font-size: 20px;
+          font-weight: 600; }
+    body .signUpForm .forms {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 30px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      body .signUpForm .forms p {
+        color: #1C1C1C;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        width: 260px; }
+      body .signUpForm .forms input {
+        border: none;
+        border-bottom: 1px solid #D8D8D8;
+        margin-bottom: 20px;
+        font-size: 12px;
+        width: 260px;
+        outline: none; }
+      body .signUpForm .forms .radioButtons {
+        width: 260px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        body .signUpForm .forms .radioButtons .radioBtn {
+          height: 20px;
+          margin-right: 20px; }
+        body .signUpForm .forms .radioButtons label.radioBtn {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center;
-          width: 100%;
-          border-radius: 7px 7px 0 0; }
-          body section:nth-of-type(1) .container .signUpForm .try h5 {
-            font-weight: 600; }
-            body section:nth-of-type(1) .container .signUpForm .try h5 span {
-              color: #E27866;
-              font-size: 20px;
-              font-weight: 600; }
-        body section:nth-of-type(1) .container .signUpForm .forms {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          width: 100%;
-          margin-top: 30px;
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center; }
-          body section:nth-of-type(1) .container .signUpForm .forms p {
-            color: #1C1C1C;
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            width: 260px; }
-          body section:nth-of-type(1) .container .signUpForm .forms input {
-            border: none;
-            border-bottom: 1px solid #D8D8D8;
-            margin-bottom: 20px;
-            font-size: 12px;
-            width: 260px;
-            outline: none; }
-          body section:nth-of-type(1) .container .signUpForm .forms .radioButtons {
-            width: 260px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex; }
-            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .radioBtn {
-              height: 20px;
-              margin-right: 20px; }
-            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons label.radioBtn {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center; }
-              body section:nth-of-type(1) .container .signUpForm .forms .radioButtons label.radioBtn span {
-                color: black;
-                font-size: 9px;
-                margin-left: 5px; }
-            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .radioBtn input {
-              display: none;
-              opacity: 0;
-              cursor: pointer; }
-            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .checkmark {
-              height: 13px;
-              width: 13px;
-              border: 1px solid #41D395;
-              border-radius: 50%;
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-pack: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              -webkit-box-align: center;
-              -ms-flex-align: center;
-              align-items: center; }
-            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons .radioBtn:hover input ~ .checkmark {
-              border: 2px solid #41D395; }
-            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons input:checked ~ .checkmark:after {
-              content: "";
-              display: block;
-              width: 11px;
-              height: 11px;
-              border-radius: 50%;
-              background: #41D395; }
-            body section:nth-of-type(1) .container .signUpForm .forms .radioButtons input:checked ~ span {
-              font-weight: 600; }
-          body section:nth-of-type(1) .container .signUpForm .forms .getStarted {
-            background: #41D395;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            height: 60px;
-            border-radius: 0 0 7px 7px;
-            margin-top: 30px;
-            width: 100%; }
-            body section:nth-of-type(1) .container .signUpForm .forms .getStarted input {
-              color: white;
-              background: none;
-              border: none;
-              font-size: 18px;
-              font-weight: 600;
-              margin: 0;
-              cursor: pointer; }
+          body .signUpForm .forms .radioButtons label.radioBtn span {
+            color: black;
+            font-size: 9px;
+            margin-left: 5px; }
+        body .signUpForm .forms .radioButtons .radioBtn input {
+          display: none;
+          opacity: 0;
+          cursor: pointer; }
+        body .signUpForm .forms .radioButtons .checkmark {
+          height: 13px;
+          width: 13px;
+          border: 1px solid #41D395;
+          border-radius: 50%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+        body .signUpForm .forms .radioButtons .radioBtn:hover input ~ .checkmark {
+          border: 2px solid #41D395; }
+        body .signUpForm .forms .radioButtons input:checked ~ .checkmark:after {
+          content: "";
+          display: block;
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          background: #41D395; }
+        body .signUpForm .forms .radioButtons input:checked ~ span {
+          font-weight: 600; }
+      body .signUpForm .forms .getStarted {
+        background: #41D395;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 60px;
+        border-radius: 0 0 7px 7px;
+        margin-top: 30px;
+        width: 100%; }
+        body .signUpForm .forms .getStarted input {
+          color: white;
+          background: none;
+          border: none;
+          font-size: 18px;
+          font-weight: 600;
+          margin: 0;
+          cursor: pointer; }
   body section:nth-of-type(1):before {
     content: "";
     position: absolute;
@@ -618,6 +683,9 @@ body {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
+      body section:nth-of-type(8) .container p.contact {
+        margin-top: 50px;
+        margin-bottom: 30px; }
   body footer {
     background: #1C1C1C; }
     body footer .container {

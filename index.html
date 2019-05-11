@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Didysis kursinis darbas</title>
+    <title>Neblogas kursinis toks</title>
     <link rel="stylesheet" href="mainStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 </head>
 
 <body>
@@ -77,11 +78,11 @@
                 <p class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
                     laoreet.</p>
             </div>
-            <div class="socialLogo" id="facebook"></div>
-            <div class="socialLogo" id="instagram"></div>
-            <div class="socialLogo" id="tweeter"></div>
-            <div class="socialLogo" id="pinterest"></div>
-            <div class="socialLogo" id="rss"></div>
+            <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="facebook"></a>
+            <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="instagram"></a>
+            <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="tweeter"></a>
+            <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="pinterest"></a>
+            <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="rss"></a>
         </div>
     </section>
     <section id="features">
@@ -204,30 +205,118 @@
     <section id="reviews">
         <div class="container">
             <h3 class="black">WHAT OUR CUSTOMERS ARE SAYING</h3>
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="review">
+                                <p class="reviewText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum provident aut dicta dolor. Veniam assumenda corrupti nam reprehenderit pariatur, dicta quisquam eum expedita soluta rem explicabo libero non. Aspernatur, sed!</p>
+                                <div class="reviewPerson">
+                                    <div class="personPicture" id="jeremy"></div>
+                                    <div class="person">
+                                        <p class="personName">Jeremy H.</p>
+                                        <p class="personPossition">Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                                <div class="review">
+                                        <p class="reviewText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum provident aut dicta dolor. Veniam assumenda corrupti nam reprehenderit pariatur, dicta quisquam eum expedita soluta rem explicabo libero non. Aspernatur, sed!</p>
+                                        <div class="reviewPerson">
+                                            <div class="personPicture" id="jeremy"></div>
+                                            <div class="person">
+                                                <p class="personName">Jeremy H.</p>
+                                                <p class="personPossition">Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="swiper-slide">
+                                <div class="review">
+                                        <p class="reviewText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum provident aut dicta dolor. Veniam assumenda corrupti nam reprehenderit pariatur, dicta quisquam eum expedita soluta rem explicabo libero non. Aspernatur, sed!</p>
+                                        <div class="reviewPerson">
+                                            <div class="personPicture" id="jeremy"></div>
+                                            <div class="person">
+                                                <p class="personName">Jeremy H.</p>
+                                                <p class="personPossition">Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                        <div class="swiper-slide">
+                                <div class="review">
+                                        <p class="reviewText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum provident aut dicta dolor. Veniam assumenda corrupti nam reprehenderit pariatur, dicta quisquam eum expedita soluta rem explicabo libero non. Aspernatur, sed!</p>
+                                        <div class="reviewPerson">
+                                            <div class="personPicture" id="jeremy"></div>
+                                            <div class="person">
+                                                <p class="personName">Jeremy H.</p>
+                                                <p class="personPossition">Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
         </div>
     </section>
     <section id="contact">
         <div class="container">
             <h3 class="black">CONTACT US</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="signUpForm" class="signUpFormSend"></div>
+            <p class="contact">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="signUpForm">
+                <div class="try">
+                    <h5 class="semiBold">Try Your<span> FREE </span>Trial Today</h5>
+                </div>
+                <div class="forms">
+                    <p>Your details</p>
+                    <input type="text" class="textInput" placeholder="First name">
+                    <input type="text" class="textInput" placeholder="Last name">
+                    <input type="tel" class="textInput" placeholder="Phone number">
+                    <p>Type of subscription</p>
+                    <div class="radioButtons">
+                        <label class="radioBtn">
+                            <input type="radio" checked="checked" name="radio">
+                            <div class="checkmark"></div>
+                            <span>MONTHLY</span>
+                        </label>
+                        <label class="radioBtn">
+                            <input type="radio" name="radio">
+                            <div class="checkmark"></div>
+                            <span>YEARLY</span>
+                        </label>
+                    </div>
+                    <div class="getStarted">
+                        <input type="submit" value="GET STARTED">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
         <div class="container">
             <div class="footerLogos">
-                <div class="socialLogo" id="facebook20"></div>
-                <div class="socialLogo" id="instagram20"></div>
-                <div class="socialLogo" id="tweeter20"></div>
-                <div class="socialLogo" id="pinterest20"></div>
-                <div class="socialLogo" id="rss20"></div>
+                <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="facebook20"></a>
+                <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="instagram20"></a>
+                <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="tweeter20"></a>
+                <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="pinterest20"></a>
+                <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="rss20"></a>
             </div>
             <p class="grey">© 2019 Cheshire County</p>
         </div>
     </footer>
     </div>
+    <<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="myScripts.js"></script>
+
 </body>
 
 </html>
