@@ -25,7 +25,7 @@ $(document).ready(function(){
       // Optional parameters
       direction: 'horizontal',
       loop: true,
-      slidesPerView: 2
+      slidesPerView: 3
     })
   });
 
