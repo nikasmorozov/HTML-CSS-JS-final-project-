@@ -25,7 +25,13 @@ $(document).ready(function(){
       // Optional parameters
       direction: 'horizontal',
       loop: true,
-      slidesPerView: 3
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
     })
   });
-
