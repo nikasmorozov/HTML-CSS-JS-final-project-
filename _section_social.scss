@@ -1,0 +1,45 @@
+section:nth-of-type(2) {
+
+    .container {
+        height: 105px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h5 {
+        margin-bottom: 5px;
+    }
+
+    p {
+        max-width: 400px;
+    }
+}
+
+.socialLogo {
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .65;
+}
+
+#facebook {
+    background-image: url(media/facebook-logo-1.svg);
+}
+
+#instagram {
+    background-image: url(media/instagram-logo-1.svg);
+}
+    
+#tweeter {
+    background-image: url(media/twitter-1.svg);
+}
+
+#pinterest {
+    background-image: url(media/pinterest-1.svg);
+    }
+
+#rss {
+    background-image: url(media/Group_92.svg);
+}

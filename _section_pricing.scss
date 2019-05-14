@@ -1,0 +1,86 @@
+section:nth-of-type(6) {
+    background: $blue;
+
+    .container {
+            height: 800px;
+    }
+    
+    h3 {
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    h3:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -30px;
+        height: 100%;
+        width: 60px;
+        border-bottom: 2px solid $green;
+        transform: translateY(20px);
+    }
+}
+
+.cards {
+    margin-top: 80px;
+    display: flex;
+}
+
+.card {
+    width: 343px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+
+    h5 {
+        color: white;
+        margin-top: 14px;
+        margin-bottom: 21px;
+    }
+
+    p {
+        margin-top: 14px;
+        margin-bottom: 19px;
+    }
+}
+
+.darkGreyBackground {
+    background: #333333;
+    border-radius: 7px 7px 0 0 ;
+}
+
+.dollarSign {
+    font-size: 36px;
+}
+   
+.price {
+    font-size: 94px;
+}
+
+
+.greenBlock {
+    border: 3px solid $green;
+    background: $green;
+
+    p {
+        margin-top: 11px;
+        margin-bottom: 11px;
+        text-transform: uppercase;
+    }
+}
+
+.whiteBackground {
+    background: white;
+    border-radius: 0 0 7px 7px;
+
+    p {
+        color: $mediumGrey;
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
+}
