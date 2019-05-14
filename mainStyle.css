@@ -727,7 +727,8 @@ footer {
     opacity: 1; }
 
 * {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid lightblue; }
 
 body {
   margin: 0; }
