@@ -685,11 +685,23 @@ section:nth-of-type(7) h3:after {
   border-radius: 50%;
   background: grey;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   margin-right: 15px; }
 
-#jeremy {
+#customer1 {
+  background-image: url(media/customer2.jpg); }
+
+#customer2 {
+  background-image: url(media/customer4.jpg); }
+
+#customer3 {
+  background-image: url(media/customer1.jpg); }
+
+#customer4 {
   background-image: url(media/jeremy.png); }
+
+#customer5 {
+  background-image: url(media/customer3.jpg); }
 
 section:nth-of-type(8) {
   background: #E27866; }
