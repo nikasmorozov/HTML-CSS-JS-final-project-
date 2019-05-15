@@ -31,19 +31,19 @@ section:nth-of-type(7) {
 }
 
 .swiper-pagination-bullet {
-    width: 10px !important;
-    height: 10px !important;
+    width: 10px;
+    height: 10px;
     text-align: center;
     line-height: 20px;
     font-size: 0px;
     color: rgba(0,0,0,0);
     opacity: 1;
-    background: none !important;
+    background: none;
     border: 2px solid $coral;
 }
 
 .swiper-pagination-bullet-active {
-    background: $coral !important;
+    background: $coral;
 }
 
 .review {
