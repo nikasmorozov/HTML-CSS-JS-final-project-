@@ -191,7 +191,7 @@ header {
   background-size: cover; }
 
 .menuitem {
-  padding: 0 30px 0 30px; }
+  margin-left: 40px; }
   .menuitem:hover {
     text-shadow: 0px -2px 0px black, 0 0 5px rgba(255, 255, 255, 0.8), 0 -4px 15px rgba(255, 255, 255, 0.5); }
   .menuitem:nth-of-type(1):hover ~ .underbar {
@@ -727,8 +727,7 @@ footer {
     opacity: 1; }
 
 * {
-  font-family: 'Montserrat', sans-serif;
-  border: 1px solid lightblue; }
+  font-family: 'Montserrat', sans-serif; }
 
 body {
   margin: 0; }

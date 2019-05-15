@@ -35,3 +35,27 @@ $(document).ready(function(){
       },
     })
   });
+
+  function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Pleeeease fill all the fields");
+      return false;
+    }
+  }
+
+  function validateForm() {
+    var x = document.forms["myForm"]["lname"].value;
+    if (x == "") {
+      alert("Pleeeease fill all the fields");
+      return false;
+    }
+  }
+
+  function validateForm() {
+    var x = document.forms["myForm"]["telnumber"].value;
+    if (x == "") {
+      alert("Pleeeease fill all the fields");
+      return false;
+    }
+  }

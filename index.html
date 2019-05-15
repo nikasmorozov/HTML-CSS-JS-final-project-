@@ -46,11 +46,12 @@
                 <div class="try">
                     <h5 class="semiBold">Try Your<span> FREE </span>Trial Today</h5>
                 </div>
-                <div class="forms">
+                <form name="myForm" action="" onsubmit="return validateForm()" method="GET" class="forms">
                     <p>Your details</p>
-                    <input type="text" class="textInput" placeholder="First name">
-                    <input type="text" class="textInput" placeholder="Last name">
-                    <input type="tel" class="textInput" placeholder="Phone number">
+                    
+                        <input type="text" name="fname" class="textInput" placeholder="First name">
+                        <input type="text" name="lname" class="textInput" placeholder="Last name">
+                        <input type="tel" name="telnumber" class="textInput" placeholder="Phone number">
                     <p>Type of subscription</p>
                     <div class="radioButtons">
                         <label class="radioBtn">
@@ -65,9 +66,9 @@
                         </label>
                     </div>
                     <div class="getStarted">
-                        <input type="submit" value="GET STARTED">
+                            <input type="submit" value="GET STARTED">
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
@@ -281,28 +282,29 @@
                 <div class="try">
                     <h5 class="semiBold">Try Your<span> FREE </span>Trial Today</h5>
                 </div>
-                <div class="forms">
-                    <p>Your details</p>
-                    <input type="text" class="textInput" placeholder="First name">
-                    <input type="text" class="textInput" placeholder="Last name">
-                    <input type="tel" class="textInput" placeholder="Phone number">
-                    <p>Type of subscription</p>
-                    <div class="radioButtons">
-                        <label class="radioBtn">
-                            <input type="radio" checked="checked" name="radio">
-                            <div class="checkmark"></div>
-                            <span>PERSONAL</span>
-                        </label>
-                        <label class="radioBtn">
-                            <input type="radio" name="radio">
-                            <div class="checkmark"></div>
-                            <span>YEARLY</span>
-                        </label>
-                    </div>
-                    <div class="getStarted">
-                        <input type="submit" value="GET STARTED">
-                    </div>
-                </div>
+                <form name="myForm" action="" onsubmit="return validateForm()" method="GET" class="forms">
+                        <p>Your details</p>
+                        
+                            <input type="text" name="fname" class="textInput" placeholder="First name">
+                            <input type="text" name="lname" class="textInput" placeholder="Last name">
+                            <input type="tel" name="telnumber" class="textInput" placeholder="Phone number">
+                        <p>Type of subscription</p>
+                        <div class="radioButtons">
+                            <label class="radioBtn">
+                                <input type="radio" checked="checked" name="radio">
+                                <div class="checkmark"></div>
+                                <span>MONTHLY</span>
+                            </label>
+                            <label class="radioBtn">
+                                <input type="radio" name="radio">
+                                <div class="checkmark"></div>
+                                <span>YEARLY</span>
+                            </label>
+                        </div>
+                        <div class="getStarted">
+                                <input type="submit" value="GET STARTED">
+                        </div>
+                    </form>
             </div>
         </div>
     </section>
