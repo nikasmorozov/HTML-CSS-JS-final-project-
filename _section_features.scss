@@ -4,13 +4,122 @@ section:nth-of-type(3) {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    z-index: 1;
 
     .container {
         height: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
-section:nth-of-type(3):after {
+.features-swiper-container {
+    max-width: 950px;
+    overflow: hidden;
+
+    .swiper-wrapper {
+        margin-bottom: 0px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.controlTabs {
+    width: 100px;
+    height: 340px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.controlTab {
+    width: 100px;
+    height: 100px;
+    background: $coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-align: center;
+        font-weight: 600;
+        transform: rotate(-45deg);
+    }
+}
+
+.featureText {
+    max-width: 520px;
+}
+
+.featureImages {
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.featureImageDouble {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featureImageDoubleItem {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+}
+
+.featureImageDoubleItem::after,
+.featureImageSingle::after {
+    content: "EXPLORE";
+    display: flex;
+    color: white;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: $coral;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.featureImageDoubleItem:hover::after,
+.featureImageSingle:hover::after {
+    opacity: 0.8;
+}
+
+.featureImageSingle {
+    width: 360px;
+    height: 170px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+#shoes {
+    background-image: url(media/photo-1448387473223-5c37445527e7-image.jpg);
+}
+
+#vegie {
+    background-image: url(media/photo-1493409137604-0901c55e4456-image.jpg);
+}
+
+#vegies {
+    background-image: url(media/photo-1543364195-bfe6e4932397-image.jpg);
+}
+
+section:nth-of-type(3):before {
     content: "";
     position: absolute;
     top: 0;
@@ -19,4 +128,5 @@ section:nth-of-type(3):after {
     height: 100%;
     background: linear-gradient(to left, #6696E2 , #E27866);
     opacity: 0.42;
+    z-index: -1;
 }

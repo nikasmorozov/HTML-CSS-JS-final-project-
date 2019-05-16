@@ -47,9 +47,9 @@
                 </div>
                 <form name="myForm" action="" onsubmit="return validateForm()" method="GET" class="forms">
                     <p>Your details</p>
-                        <input type="text" name="fname" class="textInput" placeholder="First name">
-                        <input type="text" name="lname" class="textInput" placeholder="Last name">
-                        <input type="tel" name="telnumber" class="textInput" placeholder="Phone number">
+                    <input type="text" name="fname" class="textInput" placeholder="First name">
+                    <input type="text" name="lname" class="textInput" placeholder="Last name">
+                    <input type="tel" name="telnumber" class="textInput" placeholder="Phone number">
                     <p>Type of subscription</p>
                     <div class="radioButtons">
                         <label class="radioBtn">
@@ -64,7 +64,7 @@
                         </label>
                     </div>
                     <div class="getStarted">
-                            <input type="submit" value="GET STARTED">
+                        <input type="submit" value="GET STARTED">
                     </div>
                 </form>
             </div>
@@ -85,8 +85,38 @@
         </div>
     </section>
     <section id="features">
-        <!-- treciadieniui -->
-        <div class="container"></div>
+        <div class="container">
+            <div class="controlTabs">
+                <div class="controlTab">
+                    <p class="controP">REGISTER</p>
+                </div>
+                <div class="controlTab">
+                    <p class="controP">APPLY</p>
+                </div>
+                <div class="controlTab">
+                    <p class="controP">RECEIVE</p>
+                </div>
+            </div>
+            <div class="features-swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="featureText">
+                            <h3>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                        </div>
+                        <div class="featureImages">
+                            <div class="featureImageDouble">
+                                <div class="featureImageDoubleItem" id="vegie"></div>
+                                <div class="featureImageDoubleItem" id="vegies"></div>
+                            </div>
+                            <div class="featureImageSingle" id="shoes"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="about">
         <div class="container">
@@ -267,18 +297,18 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                            <div class="review">
-                                <p class="reviewText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
-                                    provident sed! Nu labai geeeeras produktas :)</p>
-                                <div class="reviewPerson">
-                                    <div class="personPicture" id="customer5"></div>
-                                    <div class="person">
-                                        <p class="personName">Megan F.</p>
-                                        <p class="personPossition">Designer</p>
-                                    </div>
+                        <div class="review">
+                            <p class="reviewText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum
+                                provident sed! Nu labai geeeeras produktas :)</p>
+                            <div class="reviewPerson">
+                                <div class="personPicture" id="customer5"></div>
+                                <div class="person">
+                                    <p class="personName">Megan F.</p>
+                                    <p class="personPossition">Designer</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -290,31 +320,26 @@
             <h3 class="black">CONTACT US</h3>
             <p class="contact">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <div class="signUpForm">
-                <div class="try">
-                    <h5 class="semiBold">Try Your<span> FREE </span>Trial Today</h5>
-                </div>
                 <form name="myForm" action="" onsubmit="return validateForm()" method="GET" class="forms">
-                        <p>Your details</p>
-                            <input type="text" name="fname" class="textInput" placeholder="First name">
-                            <input type="text" name="lname" class="textInput" placeholder="Last name">
-                            <input type="tel" name="telnumber" class="textInput" placeholder="Phone number">
-                        <p>Type of subscription</p>
-                        <div class="radioButtons">
-                            <label class="radioBtn">
-                                <input type="radio" checked="checked" name="radio">
-                                <div class="checkmark"></div>
-                                <span>MONTHLY</span>
-                            </label>
-                            <label class="radioBtn">
-                                <input type="radio" name="radio">
-                                <div class="checkmark"></div>
-                                <span>YEARLY</span>
-                            </label>
-                        </div>
-                        <div class="getStarted">
-                                <input type="submit" value="GET STARTED">
-                        </div>
-                    </form>
+                    <input type="text" name="fname" class="textInput" placeholder="First name">
+                    <input type="text" name="lname" class="textInput" placeholder="Last name">
+                    <input type="tel" name="telnumber" class="textInput" placeholder="Phone number">
+                    <div class="radioButtons">
+                        <label class="radioBtn">
+                            <input type="radio" checked="checked" name="radio">
+                            <div class="checkmark"></div>
+                            <span>PERSONAL</span>
+                        </label>
+                        <label class="radioBtn">
+                            <input type="radio" name="radio">
+                            <div class="checkmark"></div>
+                            <span>COMPANY</span>
+                        </label>
+                    </div>
+                    <div class="getStarted">
+                        <input type="submit" value="SEND">
+                    </div>
+                </form>
             </div>
         </div>
     </section>

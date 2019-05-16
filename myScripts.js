@@ -19,6 +19,25 @@ $(document).ready(function(){
     });
   });
 
+  // Cia features swiperis
+  $(document).ready(function () {
+    //initialize swiper when document ready
+    var myFeaturesSwiper = new Swiper ('.features-swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      slidesPerView: 1,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+    })
+  });
+
+  // Cia reviews swiperis
   $(document).ready(function () {
     //initialize swiper when document ready
     var mySwiper = new Swiper ('.swiper-container', {
@@ -35,6 +54,7 @@ $(document).ready(function(){
       },
     })
   });
+
 
   function validateForm() {
     var x = document.forms["myForm"]["fname"].value;
