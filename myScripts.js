@@ -113,3 +113,11 @@ $(document).ready(function(){
     }
   }
 
+  function burgerMenu() {
+    var x = document.getElementById("navMenu");
+    if (x.className === "container") {
+      x.className += "_responsive";
+    } else {
+      x.className = "container";
+    }
+  }

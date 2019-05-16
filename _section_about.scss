@@ -1,9 +1,9 @@
 section:nth-of-type(4) {
     background: $black;
     width: 100vw;
+    padding: 50px 0 50px 0;
     
     .container {
-        height: 600px;
         flex-direction: row;
         justify-content: space-between;
     }   
@@ -73,4 +73,12 @@ section:nth-of-type(4) {
 .whiteSemiBold {
     font-weight: 600;
     margin-bottom: 6px;
+}
+
+@media only screen and (max-width: $responsiveW) {
+    section:nth-of-type(4) {
+        .container {
+            flex-direction: column;
+        }   
+    }
 }

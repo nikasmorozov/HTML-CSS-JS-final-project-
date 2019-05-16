@@ -14,7 +14,7 @@
 <body>
     <div id="home"></div>
     <header>
-        <div class="container">
+        <div class="container" id="navMenu">
             <a href="#home">
                 <div id="headerLogo"></div>
             </a>
@@ -25,6 +25,7 @@
                 <a href="#reviews" class="menuitem"><span>Reviews</span></a>
                 <a href="#contact" class="menuitem"><span>Contact</span></a>
             </div>
+            <div class="navButton" onclick="burgerMenu()"></div>
         </div>
     </header>
     <div class="mainContent"></div>
@@ -77,11 +78,13 @@
                 <p class="grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
                     laoreet.</p>
             </div>
+            <div class="socialLogos">
             <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="facebook"></a>
             <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="instagram"></a>
             <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="tweeter"></a>
             <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="pinterest"></a>
             <a href="https://www.facebook.com/nikasmorozov" class="socialLogo" id="rss"></a>
+            </div>
         </div>
     </section>
     <section id="features">
@@ -101,10 +104,13 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide" data-slide="1">
+                    <div class="swiper-slide">
                         <div class="featureText">
                             <h3>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
                         </div>
                         <div class="featureImages">
                             <div class="featureImageDouble">
@@ -114,29 +120,45 @@
                             <div class="featureImageSingle" id="shoes"></div>
                         </div>
                     </div>
-                    <div class="swiper-slide" data-slide="2">
+                    <div class="swiper-slide">
                         <div class="featureText">
-                            <h3>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            <h3>Tabs with soft transitioning effect.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
                         </div>
                         <div class="featureImages">
                             <div class="featureImageDouble">
+                                <div class="featureImageDoubleItem" id="vegie"></div>
+                                <div class="featureImageDoubleItem" id="vegies"></div>
                             </div>
                             <div class="featureImageSingle" id="shoes"></div>
                         </div>
                     </div>
-                    <div class="swiper-slide" data-slide="3">
+                    <div class="swiper-slide">
                         <div class="featureText">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+                            <h3>Explained propriety of out perpetual his you.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales
+                                pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                laoreet.
+                            </p>
+                            <p>Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales
+                                pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem
+                                ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
                         </div>
                         <div class="featureImages">
                             <div class="featureImageDouble">
+                                <div class="featureImageDoubleItem" id="vegie"></div>
+                                <div class="featureImageDoubleItem" id="vegies"></div>
                             </div>
                             <div class="featureImageSingle" id="shoes"></div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <section id="about">

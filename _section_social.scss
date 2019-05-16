@@ -11,8 +11,12 @@ section:nth-of-type(2) {
     }
 
     p {
-        max-width: 400px;
+        max-width: 450px;
     }
+}
+
+.socialLogos {
+    display: flex;
 }
 
 .socialLogo {
@@ -22,6 +26,7 @@ section:nth-of-type(2) {
     background-position: center;
     background-repeat: no-repeat;
     opacity: .65;
+    margin-right: 50px;
 }
 
 #facebook {
@@ -42,4 +47,24 @@ section:nth-of-type(2) {
 
 #rss {
     background-image: url(media/Group_92.svg);
+}
+
+@media only screen and (max-width: $responsiveW) {
+    footer {
+
+        .container {
+            display: flex;
+            max-width: 600px;
+            flex-direction: column;
+        }
+    }
+
+    .socialLogos {
+        display: flex;
+
+
+        .socialLogo {
+            margin-right: 20px;
+        }
+    }
 }

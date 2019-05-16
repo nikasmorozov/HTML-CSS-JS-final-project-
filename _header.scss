@@ -26,15 +26,16 @@ header {
 .menuitem {
     margin-left: 40px;
     font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #031D44;
-  padding: 20px 0px;
-  margin: 0px 20px;
-  display: inline-block;
-  position: relative;
-  opacity: 0.75;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #031D44;
+    padding: 20px 0px;
+    margin-right: 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+    text-align: center;
 
     &:hover{
         text-shadow: 0px -2px 0px rgba(0,0,0,1), 0 0 5px rgba(255,255,255,0.8),0 -4px 15px rgba(255,255,255,0.5);
@@ -49,9 +50,25 @@ header {
     background-color: $coral;
     height: 0%;
     width: 100%;
-    bottom: -7px;
+    bottom: 15px;
+    left: 0;
   }
 
 .menuitem:hover::before {
     height: 5px;
 }
+
+.navButton {
+    position: absolute;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    background: $coral;
+    display: none;
+}
+
+
+
+@media only screen and (max-width: $responsiveW) {
+    
+  }

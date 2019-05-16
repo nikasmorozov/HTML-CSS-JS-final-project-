@@ -1,10 +1,12 @@
 section:nth-of-type(7) {
+    padding: 0 0 50px 0;
 
     h3 {
         color: $black;
         position: relative;
         margin-bottom: 50px;
         margin-top: 100px;
+        text-align: center;
     }
 
     h3:after {
@@ -22,6 +24,7 @@ section:nth-of-type(7) {
 
 .swiper-container {
     width: 1098px;
+    overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -119,4 +122,12 @@ section:nth-of-type(7) {
 
 #customer5 {
     background-image: url(media/customer3.jpg);
+}
+
+@media only screen and (max-width: $responsiveW) {
+
+    .swiper-container {
+        width: 600px;
+    }
+
 }
