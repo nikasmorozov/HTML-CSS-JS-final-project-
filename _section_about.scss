@@ -75,6 +75,18 @@ section:nth-of-type(4) {
     margin-bottom: 6px;
 }
 
+@media only screen and (max-width: 950px) {
+    .aboutLogo {
+        width: 250px;
+        height: 170px;
+        background-image: url(media/cheshire-county-hygiene-services-2.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+    }
+}
+
 @media only screen and (max-width: $responsiveW) {
     section:nth-of-type(4) {
         .container {
@@ -86,7 +98,5 @@ section:nth-of-type(4) {
         h4 {
             margin-top: 30px;
         }
-    
-        
     }
 }

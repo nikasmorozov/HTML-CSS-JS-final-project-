@@ -638,6 +638,15 @@ section:nth-of-type(4) {
   font-weight: 600;
   margin-bottom: 6px; }
 
+@media only screen and (max-width: 950px) {
+  .aboutLogo {
+    width: 250px;
+    height: 170px;
+    background-image: url(media/cheshire-county-hygiene-services-2.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; } }
+
 @media only screen and (max-width: 800px) {
   section:nth-of-type(4) .container {
     -webkit-box-orient: vertical;
@@ -822,6 +831,10 @@ section:nth-of-type(6) {
     margin-top: 11px;
     margin-bottom: 11px; }
 
+@media only screen and (max-width: 1100px) {
+  .cards {
+    width: 800px; } }
+
 @media only screen and (max-width: 800px) {
   .cards {
     display: -webkit-box;
@@ -836,9 +849,11 @@ section:nth-of-type(6) {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    width: 1100px; }
   .card {
-    margin-bottom: 30px; } }
+    margin: 30px 0 30px 0;
+    width: 300px; } }
 
 section:nth-of-type(7) {
   padding: 0 0 50px 0; }
