@@ -23,7 +23,7 @@ section:nth-of-type(7) {
 }
 
 .swiper-container {
-    width: 1098px;
+    max-width: 1098px;
     overflow: hidden;
 }
 
@@ -50,7 +50,7 @@ section:nth-of-type(7) {
 }
 
 .review {
-    width: 275px;
+    max-width: 300px;
 }
 
  .reviewText {
@@ -127,7 +127,7 @@ section:nth-of-type(7) {
 @media only screen and (max-width: $responsiveW) {
 
     .swiper-container {
-        width: 600px;
+        max-width: 600px;
     }
 
 }

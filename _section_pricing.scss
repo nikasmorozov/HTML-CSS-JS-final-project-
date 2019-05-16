@@ -21,18 +21,19 @@ section:nth-of-type(6) {
 }
 
 .cards {
+    width: 1100px;
     margin-top: 80px;
     display: flex;
+    justify-content: space-between;
 }
 
 .card {
-    width: 343px;
-    margin-left: 20px;
-    margin-right: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: flex-end;
+    flex-grow: 1;
+    margin: 0 30px 0 30px;
 
     h5 {
         color: white;
@@ -44,6 +45,11 @@ section:nth-of-type(6) {
         margin-top: 14px;
         margin-bottom: 19px;
     }
+}
+
+.card:nth-of-type(1),
+.card:nth-last-of-type(1) {
+    margin: 0 0 0 0;
 }
 
 .darkGreyBackground {

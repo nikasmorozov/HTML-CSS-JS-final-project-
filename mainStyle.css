@@ -317,7 +317,7 @@ section:nth-of-type(1):before {
   .downloadButton a {
     font-weight: 600; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   section:nth-of-type(1) .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -372,7 +372,7 @@ section:nth-of-type(2) p {
 #rss {
   background-image: url(media/Group_92.svg); }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -638,12 +638,14 @@ section:nth-of-type(4) {
   font-weight: 600;
   margin-bottom: 6px; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   section:nth-of-type(4) .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .aboutContent h4 {
+    margin-top: 30px; } }
 
 section:nth-of-type(5) {
   padding: 50px 0 50px 0; }
@@ -722,7 +724,7 @@ section:nth-of-type(5) {
 #visaCard {
   background-image: url(media/Group_72.svg); }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .awesomeThings {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -757,15 +759,16 @@ section:nth-of-type(6) {
     transform: translateY(20px); }
 
 .cards {
+  width: 1100px;
   margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .card {
-  width: 343px;
-  margin-left: 20px;
-  margin-right: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -776,7 +779,11 @@ section:nth-of-type(6) {
   text-align: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin: 0 30px 0 30px; }
   .card h5 {
     color: white;
     margin-top: 14px;
@@ -784,6 +791,10 @@ section:nth-of-type(6) {
   .card p {
     margin-top: 14px;
     margin-bottom: 19px; }
+
+.card:nth-of-type(1),
+.card:nth-last-of-type(1) {
+  margin: 0 0 0 0; }
 
 .darkGreyBackground {
   background: #333333;
@@ -811,7 +822,7 @@ section:nth-of-type(6) {
     margin-top: 11px;
     margin-bottom: 11px; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -850,7 +861,7 @@ section:nth-of-type(7) {
     transform: translateY(20px); }
 
 .swiper-container {
-  width: 1098px;
+  max-width: 1098px;
   overflow: hidden; }
 
 .swiper-wrapper {
@@ -877,7 +888,7 @@ section:nth-of-type(7) {
   background: #E27866; }
 
 .review {
-  width: 275px; }
+  max-width: 300px; }
 
 .reviewText {
   background: #6696E2;
@@ -944,9 +955,9 @@ section:nth-of-type(7) {
 #customer5 {
   background-image: url(media/customer3.jpg); }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .swiper-container {
-    width: 600px; } }
+    max-width: 600px; } }
 
 section:nth-of-type(8) {
   background: #E27866; }
@@ -995,7 +1006,7 @@ footer {
     margin-right: 120px;
     opacity: 1; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1040,21 +1051,6 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
   .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     padding: 30px; } }

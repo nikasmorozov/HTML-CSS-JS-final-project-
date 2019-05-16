@@ -77,7 +77,16 @@ $(document).ready(function(){
       // Optional parameters
       direction: 'horizontal',
       loop: true,
+      centerInsufficientSlides: true,
       slidesPerView: 3,
+      spaceBetween: 20,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is <= 640px
+    600: {
+      slidesPerView: 1,
+    }
+  },
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
