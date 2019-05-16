@@ -39,6 +39,7 @@ section:nth-of-type(3) {
 }
 
 .controlTab {
+    position: relative;
     width: 100px;
     height: 100px;
     background: $coral;
@@ -53,8 +54,29 @@ section:nth-of-type(3) {
     }
 }
 
+.controlTab::after {
+    content: "";
+    position: absolute;
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    transition: all 0.2s ease-in;
+}
+
+.controlTab:hover::after,
+.controlTab.active::after {
+    content: "";
+    opacity: 0;
+}
+
 .featureText {
     max-width: 520px;
+
+    h3 {
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
 }
 
 .featureImages {
@@ -92,6 +114,7 @@ section:nth-of-type(3) {
     height: 100%;
     width: 100%;
     opacity: 0;
+    transition: all 0.2s ease-in;
 }
 
 .featureImageDoubleItem:hover::after,

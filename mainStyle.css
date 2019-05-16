@@ -6,7 +6,8 @@ p, span {
   font-weight: 400;
   color: white;
   font-size: 14px;
-  margin: 0; }
+  margin: 0;
+  line-height: 1.5; }
 
 p.grey {
   color: #86878B; }
@@ -397,6 +398,7 @@ section:nth-of-type(3) {
   justify-content: space-between; }
 
 .controlTab {
+  position: relative;
   width: 100px;
   height: 100px;
   background: #E27866;
@@ -415,8 +417,26 @@ section:nth-of-type(3) {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg); }
 
+.controlTab::after {
+  content: "";
+  position: absolute;
+  background: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+
+.controlTab:hover::after,
+.controlTab.active::after {
+  content: "";
+  opacity: 0; }
+
 .featureText {
   max-width: 520px; }
+  .featureText h3 {
+    line-height: 1.2;
+    margin-bottom: 30px; }
 
 .featureImages {
   width: 360px;
@@ -465,7 +485,9 @@ section:nth-of-type(3) {
   background: #E27866;
   height: 100%;
   width: 100%;
-  opacity: 0; }
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
 
 .featureImageDoubleItem:hover::after,
 .featureImageSingle:hover::after {

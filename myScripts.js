@@ -25,7 +25,7 @@ $(document).ready(function(){
     var myFeaturesSwiper = new Swiper ('.features-swiper-container', {
       // Optional parameters
       direction: 'horizontal',
-      loop: true,
+      loop: false,
       slidesPerView: 1,
       pagination: {
         el: '.swiper-pagination',
@@ -34,7 +34,40 @@ $(document).ready(function(){
           return '<span class="' + className + '">' + (index + 1) + '</span>';
         },
       },
-    })
+    });
+
+    let controlTabs = document.querySelectorAll(".controlTab");
+    controlTabs[0].classList.add("active");
+  myFeaturesSwiper.on("slideChange", function () {
+  let slideIndex = myFeaturesSwiper.activeIndex;
+
+  for (let j=0; j < controlTabs.length; j++){
+    controlTabs[j].classList.remove("active");
+  }
+
+  controlTabs[slideIndex].classList.add("active");
+});
+
+    //ciklas kuriame zymimi mygtuku ir slide'u active'ai
+      for (let i = 0; i < controlTabs.length; i++) {
+    
+        // kas vyksta paspaudus
+        controlTabs[i].addEventListener("click", function() {
+    
+          // Nuimami visi active'ai
+          for (let j = 0; j < controlTabs.length; j++){
+            controlTabs[j].classList.remove("active");
+          }
+    
+          // uzdedamas active and pirmo mygtuko
+          this.classList.add("active");
+    
+          // keiciami slaidai naudojantis atributais "data-slide" kurie yra html'e ant mygtuku
+          let slideNumber = i;
+          console.log(slideNumber);
+          myFeaturesSwiper.slideTo(slideNumber, 500);
+        })
+      }
   });
 
   // Cia reviews swiperis
@@ -79,3 +112,4 @@ $(document).ready(function(){
       return false;
     }
   }
+
