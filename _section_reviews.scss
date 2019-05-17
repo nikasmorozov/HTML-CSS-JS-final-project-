@@ -124,7 +124,7 @@ section:nth-of-type(7) {
     background-image: url(media/customer3.jpg);
 }
 
-@media only screen and (max-width: $responsiveW) {
+@media only screen and (max-width: 1100px) {
 
     .swiper-container {
         max-width: 600px;
