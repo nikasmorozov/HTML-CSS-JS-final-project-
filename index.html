@@ -14,18 +14,19 @@
 <body>
     <div id="home"></div>
     <header>
-        <div class="container" id="navMenu">
-            <a href="#home">
+        <div class="navButton" onclick="burgerMenu()"></div>
+        <div class="container">
+            <a>
                 <div id="headerLogo"></div>
             </a>
-            <div class="menu">
-                <a href="#features" class="menuitem"><span>Features</span></a>
-                <a href="#about" class="menuitem"><span>About</span></a>
-                <a href="#pricing" class="menuitem"><span>Pricing</span></a>
-                <a href="#reviews" class="menuitem"><span>Reviews</span></a>
-                <a href="#contact" class="menuitem"><span>Contact</span></a>
+            <div class="menu" id="menuNav">
+                <a href="#home" class="menuitem" onclick="burgerMenu()"><span>Home</span></a>
+                <a href="#features" class="menuitem" onclick="burgerMenu()"><span>Features</span></a>
+                <a href="#about" class="menuitem" onclick="burgerMenu()"><span>About</span></a>
+                <a href="#pricing" class="menuitem" onclick="burgerMenu()"><span>Pricing</span></a>
+                <a href="#reviews" class="menuitem" onclick="burgerMenu()"><span>Reviews</span></a>
+                <a href="#contact" class="menuitem" onclick="burgerMenu()"><span>Contact</span></a>
             </div>
-            <div class="navButton" onclick="burgerMenu()"></div>
         </div>
     </header>
     <div class="mainContent"></div>

@@ -14,10 +14,10 @@ $(document).ready(function(){
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top - 72
-        }, 800);
+        }, 1000);
       } // End if
     });
-  });
+});
 
   // Cia features swiperis
   $(document).ready(function () {
@@ -123,10 +123,10 @@ $(document).ready(function(){
   }
 
   function burgerMenu() {
-    var x = document.getElementById("navMenu");
-    if (x.className === "container") {
+    var x = document.getElementById("menuNav");
+    if (x.className === "menu") {
       x.className += "_responsive";
     } else {
-      x.className = "container";
+      x.className = "menu";
     }
   }
