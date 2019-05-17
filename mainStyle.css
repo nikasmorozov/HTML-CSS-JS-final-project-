@@ -192,11 +192,6 @@ header {
   background-position: center;
   background-size: cover; }
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .menuitem {
   margin-left: 20px;
   font-weight: bold;
@@ -209,7 +204,9 @@ header {
   display: inline-block;
   position: relative;
   opacity: 0.75;
-  text-align: center; }
+  text-align: center;
+  -ms-flex-wrap: 1;
+  flex-wrap: 1; }
   .menuitem:hover {
     text-shadow: 0px -2px 0px black, 0 0 5px rgba(255, 255, 255, 0.8), 0 -4px 15px rgba(255, 255, 255, 0.5);
     opacity: 1; }
